@@ -11,14 +11,15 @@
     }
 
     &__text {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       bottom: 0px;
-      margin-top: 27px;
-      margin-bottom: 27px;
       width: 100%;
       z-index: 2;
       text-align: center;
+      margin-bottom: 27px;
     }
 
     &__list {

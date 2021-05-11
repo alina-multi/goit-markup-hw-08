@@ -26,6 +26,8 @@
 
     &__link {
       @extend %flex;
+      width: 170px;
+      height: 92px;
       border: 1px solid var(--icon-color);
       border-radius: 4px;
       transition: border var(--time-drn) var(--time-trans-fcn);
@@ -46,10 +48,6 @@
       height: 60px;
       fill: var(--icon-color);
       transition: fill var(--time-drn) var(--time-trans-fcn);
-      margin-top: 16px;
-      margin-bottom: 16px;
-      margin-left: 60px;
-      margin-right: 60px;
 
       @media screen and (min-width: 1200px) {
         margin-left: 32px;

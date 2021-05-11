@@ -1127,14 +1127,15 @@ img {
     flex-basis: calc((100% - 60px) / 3);
   }
   .occupation__text {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0px;
-    margin-top: 27px;
-    margin-bottom: 27px;
     width: 100%;
     z-index: 2;
     text-align: center;
+    margin-bottom: 27px;
   }
   .occupation__list {
     position: relative;
@@ -1241,6 +1242,8 @@ img {
 }
 
 .clients-list__link {
+  width: 170px;
+  height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition: border var(--time-drn) var(--time-trans-fcn);
@@ -1260,10 +1263,6 @@ img {
   height: 60px;
   fill: var(--icon-color);
   transition: fill var(--time-drn) var(--time-trans-fcn);
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 60px;
-  margin-right: 60px;
 }
 
 @media screen and (min-width: 1200px) {
