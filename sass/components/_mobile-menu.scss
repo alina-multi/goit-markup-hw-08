@@ -4,7 +4,7 @@
   }
 
   display: none;
-  @include padding(48px, 48px, 40px, 40px);
+  @include padding(48px, 40px, 40px, 40px);
   position: fixed;
   top: 0;
   left: 0;
@@ -72,6 +72,10 @@
     line-height: 1.17;
     color: var(--secondary-color);
     transition: fill var(--time-drn) var(--time-trans-fcn);
+
+    @media screen and (max-width: 480px) {
+      font-size: 36px;
+    }
   }
 
   &__item {
@@ -97,15 +101,23 @@
       font-size: 34px;
       line-height: 1.17;
       color: var(--accent-color);
+
+      @media screen and (max-width: 480px) {
+        font-size: 28px;
+      }
     }
     &__mail {
       font-size: 24px;
       line-height: 1.16;
+      @media screen and (max-width: 480px) {
+        font-size: 18px;
+      }
     }
   }
 
   &_social-list {
     display: flex;
+    flex-wrap: wrap;
     font-size: 18px;
     line-height: 1.22;
     color: var(--accent-color);
@@ -114,6 +126,7 @@
       border-left: 1px solid #ececec;
       padding-left: 10px;
       padding-right: 10px;
+      margin-bottom: 8px;
 
       &:first-child {
         padding-left: 0;
@@ -124,5 +137,9 @@
         padding-right: 0;
       }
     }
+  }
+
+  &--active-menu {
+    color: var(--accent-color);
   }
 }

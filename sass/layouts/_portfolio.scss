@@ -65,6 +65,17 @@
   top: 0px;
   @include font(18px, 1.56);
   color: var(--logo-footer-and-active-link-button);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .overflow {

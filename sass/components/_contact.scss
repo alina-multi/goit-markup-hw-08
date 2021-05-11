@@ -1,5 +1,6 @@
 .contact {
   display: inline-block;
+
   &__item-tel {
     margin-bottom: 32px;
     font-weight: 500;
@@ -66,6 +67,18 @@
   }
 
   &__link {
+    &-mail:first-child {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 21px;
+      }
+    }
+
+    &-tel:last-child {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 21px;
+      }
+    }
+
     @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: center;

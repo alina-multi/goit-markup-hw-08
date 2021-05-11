@@ -14,6 +14,8 @@
 }
 .hero--bg-image {
   max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--dark-bg-color);
   background-image: linear-gradient(
       to right,
@@ -35,7 +37,7 @@
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     & {
       background-image: linear-gradient(
           to right,
@@ -58,7 +60,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     & {
       background-image: linear-gradient(
           to right,
@@ -85,7 +87,7 @@
 .hero__title {
   margin-right: auto;
   margin-left: auto;
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;

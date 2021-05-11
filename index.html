@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    /> -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -46,7 +39,7 @@
 
         <ul class="contact list">
           <li class="contact__item">
-            <a class="contact__link link" href="mailto:info@devstudio.com">
+            <a class="contact__link contact__link-mail link" href="mailto:info@devstudio.com">
               <svg class="contact__icon-envelope">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -54,7 +47,7 @@
             >
           </li>
           <li class="contact__item">
-            <a class="contact__link link" href="tel:+380961111111">
+            <a class="contact__link contact__link-tel link" href="tel:+380961111111">
               <svg class="contact__icon-phone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -69,6 +62,7 @@
             width="40px"
             height="40px"
             aria-label="Переключатель мобильного меню"
+            role="Переключатель мобильного меню"
             aria-expanded="false"
           >
             <use
@@ -86,7 +80,7 @@
           <nav>
             <ul class="mobile-menu__list list site-nav--mobile">
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="">Студия</a>
+                <a class="mobile-menu__link link mobile-menu--active-menu" href="">Студия</a>
               </li>
               <li class="mobile-menu__item">
                 <a class="mobile-menu__link link" href="./portfolio.html"

@@ -26,7 +26,6 @@
 
     &__link {
       @extend %flex;
-      @include padding(16px, 16px, 60px, 60px);
       border: 1px solid var(--icon-color);
       border-radius: 4px;
       transition: border var(--time-drn) var(--time-trans-fcn);
@@ -40,10 +39,6 @@
       &:focus .clients-list__icon {
         fill: var(--accent-color);
       }
-
-      @media screen and (min-width: 1200px) {
-        @include padding(16px, 16px, 32px, 32px);
-      }
     }
 
     &__icon {
@@ -51,6 +46,15 @@
       height: 60px;
       fill: var(--icon-color);
       transition: fill var(--time-drn) var(--time-trans-fcn);
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-left: 60px;
+      margin-right: 60px;
+
+      @media screen and (min-width: 1200px) {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
     }
   }
 }
